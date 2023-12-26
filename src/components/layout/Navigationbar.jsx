@@ -10,7 +10,7 @@ const Navigationbar = () => {
         <Navbar.Toggle />
         <Navbar.Collapse className="justify-content-end">
           <Navbar.Text style={{ color: "#FFF7D6" }}>
-            Signed in as: <a href="#login" style={{ color: "#FFF7D6" }} >Mark Otto</a>
+            Signed in as: <a href="#login" style={{ color: "#FFF7D6" }} >Tebourbi Chokri</a>
           </Navbar.Text>
         </Navbar.Collapse>
       </Container>

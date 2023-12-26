@@ -32,9 +32,18 @@ const Caisse = () => {
   };
 
   return (
-    <Row>
+    <Row className="mt-3 ml-5">
       <Col md={3}>
-        <Card>
+        <Card
+          style={{
+            backgroundColor: "rgba(0, 126, 127, 0.75)",
+            borderRadius: "10px",
+            boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+          }}
+        >
+          <div style={{ textAlign: "center", marginTop: "5px" }}>
+            <h3 style={{ color: "#FFF7D6" }}>Caisse 1</h3>
+          </div>
           <Card.Body>
             <Form>
               {/* Recette Field */}
@@ -44,6 +53,7 @@ const Caisse = () => {
                   md={12}
                   sm={12}
                   className="mb-0.5 d-flex align-items-center"
+                  style={{ color: "#FFF7D6" }}
                 >
                   Recette
                   <Form.Control
@@ -62,6 +72,7 @@ const Caisse = () => {
                   md={12}
                   sm={12}
                   className="mb-2 d-flex align-items-center"
+                  style={{ color: "#FFF7D6" }}
                 >
                   Espece
                   <Form.Control
@@ -75,7 +86,9 @@ const Caisse = () => {
 
               {/* Cheque Fields */}
               <Row className="mb-1">
-                <h5 className="mb-0.5">Cheques</h5>
+                <h5 className="mb-0.5" style={{ color: "#FFF7D6" }}>
+                  Cheques
+                </h5>
               </Row>
               <Row className="mb-1">
                 <Form.Label
@@ -83,6 +96,7 @@ const Caisse = () => {
                   md={6}
                   sm={6}
                   className="mb-0.5 mt-0.5 d-flex align-items-center"
+                  style={{ color: "#FFF7D6" }}
                 >
                   Montant
                   <Form.Control
@@ -98,6 +112,7 @@ const Caisse = () => {
                   md={4}
                   sm={4}
                   className="mb-0.5 mt-0.5 d-flex align-items-center"
+                  style={{ color: "#FFF7D6" }}
                 >
                   N°
                   <Form.Control
@@ -123,7 +138,7 @@ const Caisse = () => {
               {/* Display Cheque Statements */}
               {chequeStatements.length > 0 && (
                 <div>
-                  <ul>
+                  <ul style={{ color: "#FFF7D6" }}>
                     {chequeStatements.map((statement, index) => (
                       <li key={index}>
                         Montant: {statement.montantCheque}, Numero:{" "}
@@ -136,7 +151,9 @@ const Caisse = () => {
 
               {/* TPE Fields */}
               <Row className="mb-1">
-                <h5 className="mb-0.5">TPE</h5>
+                <h5 className="mb-0.5" style={{ color: "#FFF7D6" }}>
+                  TPE
+                </h5>
               </Row>
               <Row className="mb-1">
                 <Form.Label
@@ -144,6 +161,7 @@ const Caisse = () => {
                   md={6}
                   sm={6}
                   className="mb-0.5 mt-0.5 d-flex align-items-center"
+                  style={{ color: "#FFF7D6" }}
                 >
                   Montant
                   <Form.Control
@@ -159,6 +177,7 @@ const Caisse = () => {
                   md={4}
                   sm={4}
                   className="mb-0.5 mt-0.5 d-flex align-items-center"
+                  style={{ color: "#FFF7D6" }}
                 >
                   N°
                   <Form.Control
@@ -184,7 +203,7 @@ const Caisse = () => {
               {/* Display TPE Statements */}
               {tpeStatements.length > 0 && (
                 <div>
-                  <ul>
+                  <ul style={{ color: "#FFF7D6" }}>
                     {tpeStatements.map((statement, index) => (
                       <li key={index}>
                         Montant: {statement.montantTpe}, Numero:{" "}
